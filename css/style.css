@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.banner-1 {
+    display: block;
+    margin: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+.menu-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+
+.menu-1 .options ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-1 .options ul li {
+    padding: 1.5rem 1.5rem;
+}
+
+.menu-1 .options ul li a {
+    font-size: 1.15rem;
+    color: #0e25f0;
+    text-decoration: none;
+}
+
+.menu-1 .options ul li a:hover {
+    text-decoration: none;
+}
+
+.menu-1 .logo {
+    font-family: 'Raleway', sans-serif;
+    color: #2602d9;
+}
+
+.shops {
+    display: flex;
+}
+
+.shops a {
+    margin: 0 1.5rem 0 0;
+    padding: 0;
+}
+
+.shops a img {
+    width: 128px;
+    object-fit: contain;
+}
+
+.info-1 p {
+    text-align: left;
+}
+
+.info-1 {
+    margin-top: 4rem;
+}
+
+.info- h3 {
+    font-weight: 800;
+}
+
+.btn-movil {
+    display: none;
+}
+
+.ver {
+    display: none;
+}
+
+.arriba {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+    background-color: #efb700;
+    cursor: pointer;
+}
+
+
+@media (max-width:700px) {
+    .banner-1 {
+        width: 90%;
+    }
+
+    .info-1 h1 {
+        font-size: 2rem;
+    }
+
+    .info-1 p {
+        text-align: justify;
+    }
+
+    .shops {
+        justify-content: center;
+    }
+
+    .info-1 {
+        margin-top: 0;
+    }
+
+    .btn-movil {
+        display: block;
+    }
+
+    .btn-movil button {
+        border: none;
+        font-size: 2rem;
+        background-color: #ffffff;
+        color: #0e25f0;
+    }
+
+    .movil ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .movil ul li {
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .movil ul li a {
+        color: #0e25f0;
+    }
+
+    .oculto {
+        display: none;
+    }
+}
